@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c5c5c5"
+    tools:context=".consulta_spinner">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una opciòn"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="15sp"
+        android:fontFamily="cursive"
+        android:textAlignment="gravity"
+        android:textColor="#AD0505"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/sp_options"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/estilospinner"
+        android:drawSelectorOnTop="true"
+        android:paddingLeft="15sp"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25sp">
+
+        <TextView
+            android:id="@+id/tv_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:text="Còdigo:"
+            android:textColor="#AD0505"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="15sp"
+            android:text="Descripciòn:"
+            android:textColor="#AD0505"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="15sp"
+            android:text="Precio:"
+            android:textColor="#AD0505"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

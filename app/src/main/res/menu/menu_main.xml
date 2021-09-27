@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.defv.crud_sqlite.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/listaArticulos"
+        android:orderInCategory="100"
+        android:title="lista"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_storage"/>
+
+    <item
+        android:id="@+id/listaArticulos2"
+        android:orderInCategory="100"
+        android:title="lista2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_table"/>
+</menu>

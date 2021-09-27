@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#696A6B"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATOS DEL ARTICULO"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="26dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="176dp"
+                android:src="@drawable/pc" />
+
+            <EditText
+                android:id="@+id/et_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/estilotxt"
+                android:drawableStart="@drawable/ic_storage"
+                android:drawablePadding="5dp"
+                android:hint="Ingrese el código"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:shadowColor="#A82A2A"
+                android:shadowRadius="5"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la descripcion del articulo"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#A82A2A"
+                android:shadowRadius="5"
+                android:textColor="#fff"
+                android:background="@drawable/estilotxt"
+                android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/et_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el precio del articulo"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#A82A2A"
+                android:shadowRadius="5"
+                android:textColor="#fff"
+                android:inputType="numberDecimal"
+                android:background="@drawable/estilotxt"
+                android:paddingLeft="25dp"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="5dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Guardar"
+                android:background="@drawable/estiloboton"
+                android:textColor="#fff"
+                android:onClick="guardar"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:drawablePadding="-140dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consultar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Consultar por código"
+                android:background="@drawable/estiloboton"
+                android:textColor="#fff"
+                android:onClick="consultaPorCodigo"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:drawablePadding="-140dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consultar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Consultar por descripción"
+                android:background="@drawable/estiloboton"
+                android:textColor="#fff"
+                android:onClick="consultaPorDescripcion"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:drawablePadding="-140dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Eliminar"
+                android:background="@drawable/estiloboton"
+                android:textColor="#fff"
+                android:onClick="eliminar"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:drawablePadding="-140dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_actualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Editar"
+                android:background="@drawable/estiloboton"
+                android:textColor="#fff"
+                android:onClick="modificacion"
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:drawablePadding="-140dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
